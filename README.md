@@ -1,0 +1,1 @@
+This is MERN Stack Social Network Application.
