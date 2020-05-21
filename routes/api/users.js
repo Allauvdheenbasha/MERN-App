@@ -71,10 +71,10 @@ router.post(
         { expiresIn: 3600 },
         (err, token) => {
           if (err){return res.send(err);} 
-          var Ouser=user._doc;
-          delete Ouser.password;
-          Ouser.token=token;
-          res.status(200).send({ Ouser });
+          // var Ouser=user._doc;
+          // delete Ouser.password;
+          // Ouser.token=token;
+          res.status(200).send({ token });
         }
       );
 
